@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",  // or a similar target like ES2017, ES2019
+    "module": "ESNext",  // or CommonJS, depending on your setup
+    "jsx": "react-jsx",  // This is crucial, tells TypeScript to handle JSX in React
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src"]  // Adjust the path if necessary
+}
+

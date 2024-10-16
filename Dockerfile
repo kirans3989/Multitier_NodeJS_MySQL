@@ -18,6 +18,9 @@ COPY . .
 # Copy built frontend from previous stage
 COPY --from=frontend-build /app/frontend/build ./frontend/build
 
+# Expose port 3000 for the backend
 EXPOSE 3000
 
+# Start the backend
 CMD ["node", "app.js"]
+
